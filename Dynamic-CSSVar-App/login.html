@@ -29,10 +29,10 @@
                 <td align="center"><input type="Password" name="Pname" value="" id="text2"></td>
             </tr>
             <tr>
+                <td colspan="2" align="right"><input type="reset" value="Reset" id="button1"></td>
+                
+                <td colspan="1" align="right"><input type="Submit" onclick="check(this.form)" value="LOGIN" id="button"></td>
 
-                <td colspan="1" align="right"><input type="Submit" onclick="check(this.form)" value="LOGIN" id="button" onchange="check();"></td>
-
-                <td colspan="2" align="right"><input type="reset" value="cancle" id="button1"></td>
             </tr>
 
         </table>
@@ -40,6 +40,16 @@
         </tr>
     </form>
 
+    <script language="javascript">
+        function check(form) {
+            if (form.text1.value == "admin" && form.text2.value == "admin") {
+                alert("login success")
+
+            } else {
+                alert("Kindly check your Password or Username")
+            }
+        }
+    </script>
 
 </body>
 
