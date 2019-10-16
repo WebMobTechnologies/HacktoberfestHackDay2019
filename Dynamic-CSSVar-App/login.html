@@ -4,6 +4,7 @@
 <head>
     <title>::Login::</title>
     <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"></script>
 </head>
 
 <body id='hr'>
@@ -12,7 +13,7 @@
         <table width=20% height=50% align="center" id="m1">
             <tr id="m1">
                 <td colspan="2" bgcolor="Green" align="center">
-                    <font color="white" size="6">ADMIN</font>
+                    <font color="white" size="6">Login</font>
                 </td>
             </tr>
             <tr>
@@ -25,16 +26,21 @@
                 <td align="center">
                     <font size="5">Password:</font>
                 </td>
-                <td align="center"><input type="Password" name="Pname" value="" id="text1"></td>
+                <td align="center"><input type="Password" name="Pname" value="" id="text2"></td>
             </tr>
             <tr>
 
-                <td colspan="2" align="right"><input type="Submit" value="LOGIN" id="button"></td>
+                <td colspan="1" align="right"><input type="Submit" onclick="check(this.form)" value="LOGIN" id="button" onchange="check();"></td>
+
+                <td colspan="2" align="right"><input type="reset" value="cancle" id="button1"></td>
             </tr>
+
         </table>
         </td>
         </tr>
     </form>
+
+
 </body>
 
 </html>
