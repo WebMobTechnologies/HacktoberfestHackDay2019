@@ -1,0 +1,33 @@
+:root {
+	--primary-bg-color: #400080;
+	--primary-color: #ffffff;
+}
+
+body{
+		    background: linear-gradient(to left, #ad5389, #3c1053);
+	}
+	.title{
+		font-size:40px;
+		font-family:calibri;
+	}
+
+* {
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+	background: var(--primary-bg-color);
+	color: var(--primary-color);
+	transition: all .16s ease-in-out;
+}
+.hero .h-screen{
+	height: 500px;
+	width: 500px;
+}
