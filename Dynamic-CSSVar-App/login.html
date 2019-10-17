@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>::Login::</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"></script>
+</head>
+
+<body id='hr'>
+
+    <form align="center">
+        <table width=20% height=50% align="center" id="m1">
+            <tr id="m1">
+                <td colspan="2" bgcolor="Green" align="center">
+                    <font color="white" size="6">Login</font>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <font size="5">UserName:</font>
+                </td>
+                <td align="center"><input type="text" name="Uname" value="" id="text1"></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <font size="5">Password:</font>
+                </td>
+                <td align="center"><input type="Password" name="Pname" value="" id="text2"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"><input type="reset" value="Reset" id="button1"></td>
+                
+                <td colspan="1" align="right"><input type="Submit" onclick="check(this.form)" value="LOGIN" id="button"></td>
+
+            </tr>
+
+        </table>
+        </td>
+        </tr>
+    </form>
+
+    <script language="javascript">
+        function check(form) {
+            if (form.text1.value == "admin" && form.text2.value == "admin") {
+                alert("login success")
+
+            } else {
+                alert("Kindly check your Password or Username")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
