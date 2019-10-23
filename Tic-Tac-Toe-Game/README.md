@@ -22,4 +22,3 @@ N/A
 
 - [Tic-Tac-Toe-JS](https://github.com/vasanthk/tic-tac-toe-js)
 - [Tic-Tac-Toe-Python](https://gist.github.com/eaorak/3966315)
-- 
